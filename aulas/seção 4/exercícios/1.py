@@ -1,6 +1,6 @@
 while True:
     try:
-        int = int(input('Digite um número inteiro: '))
+        inteiro = int(input('Digite um número inteiro: '))
     except:
         print('erro : digite um número inteiro')
     else:
