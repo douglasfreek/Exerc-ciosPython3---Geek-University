@@ -4,7 +4,7 @@ Milhas para Km/h -> fórmula: K=M*1.61
 
 while True:
     try:
-        milhas = int(input('Digite a velocidade em Milhas por hora (mph): '))
+        milhas = float(input('Digite a velocidade em Milhas por hora (mph): '))
     except:
         print('erro : digite um valor válido')
     else:
