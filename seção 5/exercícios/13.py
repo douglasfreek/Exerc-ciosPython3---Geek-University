@@ -21,7 +21,7 @@ for nota in range(1, 4):
                 break
 
 media = sum(notas) / 4
-print(f'A primeira, segunda e tericera nota, respectivamente, foram {notas}. Com peso 2 na terceira nota.')
+print(f'A primeira, segunda e terceira nota, respectivamente, foram {notas}. Com peso 2 na terceira nota.')
 print(f'A média ponderada das três notas é igual a {media:.2f}')
 if media >= 60:
     print('Resultado final: \033[32mAPROVADO\033[m')
