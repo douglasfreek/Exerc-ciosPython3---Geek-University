@@ -9,8 +9,8 @@ while True:
     print('-' * 32)
     print(f'{"CALCULADORA":^32}')
     print('-' * 32)
-    print('[ 1 ] \033[34m+\033[m                  [ 2 ] \033[34m-\033[m')
-    print('[ 3 ] \033[34m/\033[m                  [ 4 ] \033[34m*\033[m')
+    print('[ 1 ] \033[34m+\033[m', ' ' * 16, '[ 2 ] \033[34m-\033[m')
+    print('[ 3 ] \033[34m/\033[m', ' ' * 16, '[ 4 ] \033[34m*\033[m')
     print(f'{"[ 0 ] Sair":^32}\n')
     try:
         operacao = int(input('Digite o código da operação: '))
