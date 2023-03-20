@@ -14,6 +14,10 @@ for nota in range(1, 4):
         except:
             print('\033[31merro : valor inválido\033[m')
         else:
+            if notas[nota - 1] > 100:
+                del notas[nota - 1]
+                print('\033[31merro : valor inválido\033[m')
+                continue
             if nota == 3:
                 notas[2] = notas[2] * 2
                 break
