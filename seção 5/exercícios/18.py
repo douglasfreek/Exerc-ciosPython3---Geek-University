@@ -62,8 +62,7 @@ while True:
                         print('\033[31merro : valor inválido\033[m')
                     else:
                         total = n1 - n2
-                        print(f'> {n1} \033[34m-\033[m {n2}')
-                        print(f'TOTAL = \033[32m{total}\033[m')
+                        print(f'> {n1} \033[34m-\033[m {n2} = \033[32m{total}\033[m')
                         sleep(2)
                         break
             elif operacao == 3:
@@ -87,8 +86,7 @@ while True:
                             continue
                         else:
                             total = n1 / n2
-                            print(f'> {n1} \033[34m/\033[m {n2}')
-                            print(f'TOTAL = \033[32m{total:.2f}\033[m')
+                            print(f'> {n1} \033[34m/\033[m {n2} = \033[32m{total}\033[m')
                             sleep(2)
                             break
             elif operacao == 4:
@@ -108,7 +106,6 @@ while True:
                         print('\033[31merro : valor inválido\033[m')
                     else:
                         total = n1 * n2
-                        print(f'> {n1} \033[34m*\033[m {n2}')
-                        print(f'TOTAL = \033[32m{total}\033[m')
+                        print(f'> {n1} \033[34m*\033[m {n2} = \033[32m{total}\033[m')
                         sleep(2)
                         break
