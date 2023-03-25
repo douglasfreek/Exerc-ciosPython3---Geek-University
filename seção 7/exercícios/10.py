@@ -3,6 +3,8 @@ Faça um programa para ler a nota da prova de 15 alunos e armazene num vetor, ca
 """
 
 alunos_e_notas = {}
+total = 0
+media = total / len(alunos_e_notas)
 
 while True:
     try:
@@ -28,11 +30,9 @@ while not len(alunos_e_notas) == quantidade:
                 print('\033[31merro : valor inválido\033[m')
             else:
                 pass
-total = 0
 print('-=-' * 18)
 for nome, nota in sorted(alunos_e_notas.items()):
     print(f'\033[32mALUNO\033[m: {nome:<30} | \033[32mNOTA\033[m: {nota:<5.2f}')
     total += nota
-media = total / len(alunos_e_notas)
 print('-=-' * 18)
 print(f'MÉDIA GERAL: \033[32m{media:.2f}\033[m\n')
