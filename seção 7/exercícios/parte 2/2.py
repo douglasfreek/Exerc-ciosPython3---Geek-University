@@ -13,9 +13,9 @@ for lin in range(5):
             linha.append(0)
     matriz.append(linha)
 
-print('-' * 14)
-print(f'{"matriz 5x5":^14}')
-print('-' * 14)
+print('-' * 13)
+print(f'{"matriz 5x5":^13}')
+print('-' * 13)
 
 for lin, v in enumerate(matriz):
     for col, n in enumerate(v):
