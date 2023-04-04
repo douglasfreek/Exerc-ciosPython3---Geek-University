@@ -34,4 +34,3 @@ for i, x in enumerate(matriz):
 
 print(f'\n\033[32m>\033[m O maior número gerado na matriz foi o \033[32m{maior}\033[m')
 print(f'\033[32m>\033[m Sua primeira aparição foi na linha \033[32m{coord[0]}\033[m coluna \033[32m{coord[1]}\033[m')
-
