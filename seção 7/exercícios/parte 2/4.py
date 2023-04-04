@@ -6,11 +6,17 @@ from random import randint
 matriz = []
 maior = 0
 coord = ()
+lista = set()
 
-for x in range(4):
+while len(matriz) < 4:
     linha = []
-    for y in range(4):
-        linha.append(randint(1, 99))
+    while len(linha) < 4:
+        num = randint(1, 99)
+        if num not in lista:
+            lista.add(num)
+            linha.append(num)
+        else:
+            continue
     matriz.append(linha)
 
 for i, x in enumerate(matriz):
@@ -33,4 +39,4 @@ for i, x in enumerate(matriz):
     print('\n', end='')
 
 print(f'\n\033[32m>\033[m O maior número gerado na matriz foi o \033[32m{maior}\033[m')
-print(f'\033[32m>\033[m Sua primeira aparição foi na linha \033[32m{coord[0]}\033[m coluna \033[32m{coord[1]}\033[m')
+print(f'\033[32m>\033[m Localizado na linha \033[32m{coord[0]}\033[m coluna \033[32m{coord[1]}\033[m')
