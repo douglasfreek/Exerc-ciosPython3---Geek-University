@@ -5,14 +5,17 @@ Ao final deverá escrever a localização (linha e coluna) do valor, ou uma mens
 from random import randint
 
 matriz = []
+lista = set()
 find = False
 coord = ()
 
-for x in range(5):
+while len(matriz) < 5:
     linha = []
     while len(linha) < 5:
-        for y in range(5):
-            linha.append(randint(0, 99))
+        num = randint(0, 99)
+        if num not in lista:
+            linha.append(num)
+            lista.add(num)
     matriz.append(linha)
 print(f'\n{"matriz 5 x 5":^21}\n')
 
@@ -36,7 +39,7 @@ for c, x in enumerate(matriz):
             coord = c + 1, i + 1
 
 if find:
-    print(f'\033[32m>\033[m A primeira aparição do \033[32m{valor_x}\033[m foi na linha \033[32m{coord[0]}'
+    print(f'\033[32m>\033[m O número \033[32m{valor_x}\033[m está localizado na linha \033[32m{coord[0]}'
           f'\033[m coluna \033[32m{coord[1]}\033[m')
 else:
     print(f'\033[32m>\033[m O número \033[32m{valor_x}\033[m não está na matriz.')
