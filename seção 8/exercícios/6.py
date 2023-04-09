@@ -16,10 +16,9 @@ def convert_segundos(horas=0, minutos=0, segundos=0):
     segundos += horas * 3600
     return segundos
 
-
-print('-=-' * 14)
-print(f'{"hours and minutes converter tabajara 1.0":^43}')
-print('-=-' * 14)
+print('-'.center(50, '-'))
+print(' time converter tabajara 1.0 '.center(50, '-'))
+print('-'.center(50, '-'))
 while True:
     try:
         horas = int(input('\033[32m>\033[m Valor inteiro de horas: '))
