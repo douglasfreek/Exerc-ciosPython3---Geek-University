@@ -5,7 +5,7 @@ deseja efetuar com os números. Se o símbolo for + deverá ser realizada uma ad
 """
 
 
-def calculadora(x, y, operador, mostra_eq=False):
+def calculadora(x, y, operador, mostra_eq=True):
     if operador == '+':
         if mostra_eq:
             return f'\033[34m  >\033[m {x} \033[34m+\033[m {y} = \033[34m{x + y}\033[m'
@@ -34,7 +34,7 @@ def operador():
     while True:
         try:
             operador = str(input('  \033[32m[\033[37;1m   +    -    /    *    \033[m\033[32m]\033[m '
-                                 '\033[37m[ 0 - sair ]\033[m \033[32m\n  >\033[m Operação : '))
+                                 '  \033[37m[ 0 - sair ]\033[m \033[32m\n  >\033[m Operação : '))
         except:
             print('\033[31merro : valor inválido\033[m')
         else:
@@ -71,9 +71,9 @@ def valor_y():
             return y
 
 
-print('-'.center(42, '-'))
-print(' calculadora '.center(42, '-'))
-print('-'.center(42, '-'))
+print('-'.center(44, '-'))
+print(' calculadora '.center(44, '-'))
+print('-'.center(44, '-'))
 while True:
     oper = operador()
     if oper == 0:
