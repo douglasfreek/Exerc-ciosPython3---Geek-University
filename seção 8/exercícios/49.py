@@ -23,7 +23,7 @@ def matriz(linha=3, coluna=3):
             else:
                 print(f'\033[320m{num:>4}\033[m', end=' ')
         print()
-    return f'\033[32m>\033[m Soma da diagonal menor = \033[32m' \
+    return f'\033[32m>\033[m Soma da diagonal inferior = \033[32m' \
            f'{sum([num for x, linha in enumerate(matriz) for y, num in enumerate(linha) if x > y])}\033[m'
 
 
