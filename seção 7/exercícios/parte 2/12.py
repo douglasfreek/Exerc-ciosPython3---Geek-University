@@ -34,7 +34,6 @@ for x in range(0, 3):
         linha_transp.append(matriz[y][x])
     matriz_transp.append(linha_transp.copy())
     linha_transp.clear()
-    indice += 1
 print('-' * 18)
 print(f'{" m a t r i z  T":^18}')
 print('-' * 18)
