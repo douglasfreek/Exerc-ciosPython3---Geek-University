@@ -17,12 +17,12 @@ def menu():
         print(f'\t\033[32m[{n}]\033[m - {file}')
     while True:
         try:
-            op = int(input('\033[32m>\033[m opcao: '))
+            op = int(input('\033[32m>\033[m opção: '))
         except:
-            print('valor inválido')
+            print('\033[31merro : opção inválida\033[m')
         else:
             if op >= len(os.listdir()) or op < 0:
-                print('erro : valor inválido')
+                print('\033[31merro : opção inválida\033[m')
                 continue
             else:
                 return os.listdir()[op]
