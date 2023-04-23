@@ -35,5 +35,5 @@ sleep(0.5)
 with open(arquivo, 'r') as file:
     print(f'\033[32m>\033[m O arquivo \033[32m{arquivo}\033[m tem \033[32m{len(file.readlines())}\033[m linha(s).')
 sleep(0.5)
-print('\033[32m>\033[m pressione Enter para finalizar.')
+print('\033[32m>\033[m Enter para finalizar...', end='')
 input()
