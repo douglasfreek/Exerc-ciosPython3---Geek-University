@@ -34,7 +34,7 @@ with open(arquivo, 'r') as file:
     sleep(1)
     print(f'\033[34m{file.read()}\033[m')
     print('\033[32mfim do arquivo\033[m'.center(50, '-'))
-    print('\033[32m>\033[m Enter para continuar...')
+    print('\033[32m>\033[m Enter para continuar...', end='')
     input()
     file.seek(0)
     print('\033[32m>\033[m vogais encontradas: ')
