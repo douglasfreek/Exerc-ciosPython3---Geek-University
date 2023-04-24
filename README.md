@@ -1,3 +1,3 @@
-# Curso Python 3
-# Geek University
-# Resolução de exercícios do curso de Python 3 da Geek University
+# <h2>Listas de exercícios de Python3</h2>
+# <h3>algumas resoluções e testes...</h3>
+# <h4>:)</h4>
