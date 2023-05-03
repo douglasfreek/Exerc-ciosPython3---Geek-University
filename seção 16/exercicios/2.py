@@ -8,7 +8,6 @@ Crie uma classe Agenda que pode armazenar 10 pessoas e seja capaz de realizar as
 """
 
 
-
 class Agenda:
     __agenda = []
 
