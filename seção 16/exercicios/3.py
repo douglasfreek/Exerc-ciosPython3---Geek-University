@@ -64,7 +64,6 @@ class Elevador:
             print('\n\033[31m>\033[37m erro : elevador já está no térreo\033[m')
 
 
-
 while True:
     try:
         capacidade = int(input('\033[32m>\033[m digite a capacidade total do elevador : '))
